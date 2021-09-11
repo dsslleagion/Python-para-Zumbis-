@@ -1,0 +1,59 @@
+Dionisio Samuel Dos Santos Leão - ADS 
+
+Lista de exercicios III
+
+Python para Zumbis
+
+exercicio 1
+
+n = int(input('Digite uma nota de zero a dez:'))
+while n < 0 or n > 10:
+    print('Nota Invalida, Digite outro valor!')
+nota = float(input('nota Válida!'))
+
+exercicio 2
+
+nome = str(input('digite seu nome de Usuário:'))
+senha = str(input('Digite sua senha:'))
+while nome == senha:
+    print(f'Erro 404! tente novamente!')
+else:
+    print('Login efetuado com sucesso!')
+
+
+exercicio 3
+
+a = 80000
+b = 200000
+anos = 0
+while a < b:
+    a = a + (a*3 / 100)
+    b = b + (b * 1.5/100)
+    anos += 1
+print(f'Foram necessarios {anos} anos para a população'
+       f' de A atingir a de B')
+
+exercicio 4
+
+a , b = 0, 1
+numero = int(input('Digite um numero Inteiro de termos para a seqüência Fibonacci:'))
+pos = 1
+while b < numero:
+    print('posição:',pos)
+    print(b)
+    a, b = b, a + b
+    pos += 1
+print('a sequencia atingiu o limite!')
+
+exercicio 5
+
+x = int(input('Digite um numero inteiro:'))
+y = int(input('Digite um numero inteiro:'))
+while y != 0:
+    resto = x % y
+    x = y
+    y = resto
+print(x)
+
+
+

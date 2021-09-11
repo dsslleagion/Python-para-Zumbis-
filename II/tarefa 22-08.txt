@@ -1,0 +1,114 @@
+Dionisio Samuel Dos Santos Leão - ADS 
+
+Lista de exercicios I
+
+Python para Zumbis
+
+exercicio 1
+
+m1 = float(input('primeiro segmento:'))
+m2 = float(input('segundo segmento:'))
+m3 = float(input('terceiro segmento:'))
+if m1 < m2 + m3 and m2 < m1 + m3 and m3 < m1 + m2:
+    print('os segmentos acima podem formar um triangulo')
+    if m1 == m2 == m3:
+        print('EQUILÁTERO')
+    elif m1 != m2 != m3 != m1:
+        print('ESCALENO')
+    else:
+        print('ISÓSCELES')
+else:
+    print('Os segmentos acima não podem formar um triangulo')
+
+exercicio 2
+
+a = float(input('Digite um Ano:'))
+if a % 4 == 0 and a % 100 != 0 or a % 400 == 0:
+    print('Esse ano é BISSEXTO!')
+else:
+    print('Esse ano não é Bissexto!')
+
+exercicio 3
+
+peso_peixe = float(input('Peso do Peixe:'))
+if peso_peixe > 50:
+    valor_excesso = peso_peixe - 50
+    valor_multa = valor_excesso * 4
+    print(f'Você Passou do peso limite, pague o valor de R$:{valor_multa:.2f} e o peso a mais é de :{valor_excesso:.2f} kg')
+elif peso_peixe <= 50:
+    valor_excesso = 0
+    valor_multa = 0
+    print('você está dentro do limite o valor a se pagar será R$:',valor_multa,'e o excesso é de:',valor_excesso,'KG')
+
+exercicio 4
+
+n1 = int(input('Digite um numero:'))
+n2 = int(input('Digite um numero:'))
+n3 = int(input('Digite um numero:'))
+maior = n1
+if n2>n1 and n2>n3:
+    maior = n2
+if n3>n1 and n3>n2:
+    maior = n3
+print(f'o maior valor digitado foi {maior}.')
+ 
+
+exercicio 5
+
+n1 = int(input('Digite um numero:'))
+n2 = int(input('Digite um numero:'))
+n3 = int(input('Digite um numero:'))
+menor = n1
+if n2<n1 and n2<n3:
+    menor = n2
+if n3<n1 and n3<n2:
+    menor = n3
+print(f'o menor valor digitado foi {menor}.')
+maior = n1
+if n2>n1 and n2>n3:
+    maior = n2
+if n3>n1 and n3>n2:
+    maior = n3
+print(f'o maior valor digitado foi {maior}.')
+
+exercicio 6
+
+valor_por_hora = float(input('Digite quando você ganha por hora de Trabalho?:'))
+quantidade_horas_trabalhadas = int(input('Digite qual é a sua carga horaria de trabalho no mês?:'))
+quantidade_minutos_trabalhados = int(input('Digite o numero de minutos trabalhados no mês (além das horas):'))
+
+minutos_em_decimal = round(quantidade_minutos_trabalhados / 60,2)
+
+salario_bruto = round((quantidade_horas_trabalhadas + minutos_em_decimal)* valor_por_hora, 2)
+ir = round(salario_bruto*11/100, 2)
+inss = round(salario_bruto*8/100, 2)
+sindicato = round(salario_bruto*5/100, 2)
+salario_liquido = round(salario_bruto - ir - inss - sindicato, 2)
+
+print('+ salário bruto: R$',salario_bruto)
+print(' - IR (11%) : R$', ir)
+print(' - INSS (8%) : R$', inss)
+print(' - sindicato (5%) : R$', sindicato)
+print(' = Salário Liquido : R$', salario_liquido)
+
+exercicio 7
+
+cobertura_tinta = 3
+capacidade_lata = 18
+preco_lata = 80.0
+
+tamanho_area = float(input('Digite o tamanho da área a ser pintada (em m³):'))
+
+litros = tamanho_area/cobertura_tinta
+latas_inteiras = int(litros/capacidade_lata)
+if (litros % capacidade_lata != 0):
+    latas_inteiras += 1
+
+valor_total = latas_inteiras * preco_lata
+
+print('quantidade de litros de tinta necessários:', litros)
+print('quantidade de latas de tinta necessárias:', latas_inteiras)
+print('valor total da compra: R$', valor_total)
+
+
+

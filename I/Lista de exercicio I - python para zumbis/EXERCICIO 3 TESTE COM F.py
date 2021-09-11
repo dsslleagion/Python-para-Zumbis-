@@ -1,0 +1,5 @@
+d = (int(input('Escreva uma quantidade de dias: ')))
+h = (int(input('Escreva uma quantidade de horas: ')))
+m = (int(input('Escreva uma quantidade de minutos: ')))
+s = int(input('Escreva uma quantidade de segundos: '))
+print(f'A soma de {d} dias, {h} horas e {s} segundos é igual a {d * 86400 + h * 3600 + m * 60 + s} segundos')

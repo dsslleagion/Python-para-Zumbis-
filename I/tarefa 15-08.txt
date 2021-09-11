@@ -1,0 +1,101 @@
+Dionisio Samuel Dos Santos Leão - ADS 
+
+Lista de exercicios I
+
+Python para Zumbis
+
+Exercicio 1
+
+n1 = int(input('Digite um numero inteiro:'))
+n2 = int(input('Digite um numero inteiro:'))
+print (n1 + n2)
+
+Exercicio 2
+
+medida = float(input('Digite Uma distância em metros:'))
+mm = medida * 1000
+print('A media de {}m corresponde a {}mm'.format(medida, mm))
+
+Exercicio 3
+
+d = int(input('Dias:'))
+h = int(input('Horas:'))
+m = int(input('Minutos:'))
+s = int(input('Segundos:'))
+print((d*24*60*60) + (h*60*60) + (m*60) + s)
+
+Exercicio 4
+
+Salário = float(input('digite o valor salarial:'))
+Porcentagem = float(input('digite a porcentagem de acrescimo:'))
+print(f'Aumento de {Salário * Porcentagem/100} reais , e o novo salário será de {Salário * Porcentagem /100 + Salário}')
+
+Exercicio 5
+
+VM = float(input('Digite o valor do produto:'))
+PD = float(input('Digite o percentual do desconto:'))
+print (f'desconto de {VM * PD/100 }%, o valor total será de {(VM - VM * PD/100) }')
+
+
+Exercicio 6
+
+distância = float(input('digite a distância do trajeto:'))
+velocidade = float(input('digite a velocidade media esperada para a viagem:'))
+print (f'o tempo medio para a viagem será de {distância/velocidade}')
+
+Exercicio 7
+
+C = int(input('digite uma temperatura em Celsius: '))
+F = 32
+print (f'{(C * 9/5) + 32 } Fahrenheit') 
+
+Exercicio 8
+
+F = float(input('digite uma temperatura em Celsius: '))
+C = 32
+print (f'{(F - 32)* 5/9:.2f} Celsius')
+
+exercicio 9
+
+Km = float(input('Digite a quantidade de Km percorridos pelo Carro:'))
+Dias = float(input('Digite a quantidade de dias que o carro esteve alugado:'))
+VPD = 60.00
+KMR = 0.15
+print (f'O valor total a pagar será de R${((VPD * Dias) + (KMR * Km))}')
+
+exercicio 10
+
+CPD = int(input('Digite quantos cigarros são consumidos por dia:'))
+QAJF = int(input('Digite a quantidade de anos usando o cigarro:'))
+MDV = 10
+print (f'O total de dias será de { (365 * QAJF) + (CPD * 10)/1440:.2f} dias')
+
+exercicio 11
+
+print(len(str(2**1000000)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
